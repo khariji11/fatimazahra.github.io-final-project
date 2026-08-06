@@ -10,195 +10,346 @@
 <body>
 
     <!-- Header Section -->
-    <header>
-        <img src="images/logo.png.png" alt="Three Star Media Logo">
+    <header class="site-header">
 
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
 
-        <form>
-            <input type="search" placeholder="Search">
-        </form>
+            <div class="logo">
+                <img src="images/logo.png" alt="Three Star Media logo">
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Bar -->
+            <form class="search-form">
+                <input type="search" placeholder="Search">
+            </form>
+
+        </div>
+
     </header>
 
 
     <!-- Main Content -->
     <main>
 
-        <!-- Hero Banner -->
-        <section class="hero">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+
             <img src="images/main-banner.jpg" alt="Three Star Media office">
-            <div>
+
+            <div class="hero-content">
+
                 <h1>Welcome to Three Star Media</h1>
+
                 <p>
                     We create digital experiences and marketing solutions
                     that help businesses grow.
                 </p>
-                <a href="#">Connect with us</a>
+
+                <a href="#" class="button">
+                    Connect with us
+                </a>
+
             </div>
+
         </section>
 
 
-        <!-- About Section -->
-        <section class="about">
-            <img src="images/about-us.jpg" alt="About Three Star Media">
 
-            <div>
+        <!-- About Section -->
+        <section class="about-section">
+
+            <div class="about-image">
+                <img src="images/about-us.jpg" alt="About Three Star Media">
+            </div>
+
+            <div class="about-content">
+
                 <h2>About Us</h2>
+
                 <p>
                     Three Star Media provides creative solutions including
                     digital transformation, marketing, video production,
                     web development and print services.
                 </p>
+
             </div>
+
         </section>
+
+
 
 
         <!-- Services Section -->
-        <section class="services">
+        <section class="services-section">
 
             <h2>Our Services</h2>
 
-            <article>
-                <img src="images/digital.jpg" alt="Digital Transformation">
-                <h3>Digital Transformation</h3>
-                <p>Our digital solutions help businesses improve and grow.</p>
-                <button>Digital Plans</button>
-            </article>
+            <div class="services-container">
 
 
-            <article>
-                <img src="images/marketing.jpg" alt="Marketing">
-                <h3>Marketing</h3>
-                <p>Creative marketing strategies for your business.</p>
-                <button>Marketing Plans</button>
-            </article>
+                <article class="service-card">
+
+                    <img src="images/digital.jpg" alt="Digital Transformation">
+
+                    <h3>Digital Transformation</h3>
+
+                    <p>
+                        Our digital solutions help businesses improve and grow.
+                    </p>
+
+                    <a href="#" class="service-button">
+                        Digital Plans
+                    </a>
+
+                </article>
 
 
-            <article>
-                <img src="images/video.jpg" alt="Video Production">
-                <h3>Video Production</h3>
-                <p>Professional videos for your brand.</p>
-                <button>Video Plans</button>
-            </article>
+
+                <article class="service-card">
+
+                    <img src="images/marketing.jpg" alt="Marketing">
+
+                    <h3>Marketing</h3>
+
+                    <p>
+                        Creative marketing strategies for your business.
+                    </p>
+
+                    <a href="#" class="service-button">
+                        Marketing Plans
+                    </a>
+
+                </article>
 
 
-            <article>
-                <img src="images/web.jpg" alt="Web Development">
-                <h3>Web Development</h3>
-                <p>Modern websites designed for users.</p>
-                <button>Web Plans</button>
-            </article>
+
+                <article class="service-card">
+
+                    <img src="images/video.jpg" alt="Video Production">
+
+                    <h3>Video Production</h3>
+
+                    <p>
+                        Professional videos for your brand.
+                    </p>
+
+                    <a href="#" class="service-button">
+                        Video Plans
+                    </a>
+
+                </article>
 
 
-            <article>
-                <img src="images/print.jpg" alt="Print">
-                <h3>Print</h3>
-                <p>High quality printing services.</p>
-                <button>Print Plans</button>
-            </article>
+
+                <article class="service-card">
+
+                    <img src="images/web.jpg" alt="Web Development">
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Modern websites designed for users.
+                    </p>
+
+                    <a href="#" class="service-button">
+                        Web Plans
+                    </a>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <img src="images/print.jpg" alt="Print Services">
+
+                    <h3>Print</h3>
+
+                    <p>
+                        High quality printing services.
+                    </p>
+
+                    <a href="#" class="service-button">
+                        Print Plans
+                    </a>
+
+                </article>
+
+
+            </div>
 
         </section>
 
 
+
+
         <!-- Vision Section -->
-        <section class="vision">
-            <img src="images/vision.jpg" alt="Our Vision">
+        <section class="vision-section">
+
+            <img src="images/vision.jpg" alt="Our vision">
 
             <div>
+
                 <h2>Our Vision</h2>
+
                 <p>
                     Our vision is to provide innovative solutions
                     for businesses worldwide.
                 </p>
-                <button>Learn More</button>
+
+                <a href="#" class="button">
+                    Learn More
+                </a>
+
             </div>
+
         </section>
+
+
 
 
         <!-- Team Section -->
-        <section class="team">
+        <section class="team-section">
 
             <h2>Our Team</h2>
 
-            <article>
-                <img src="images/bob.jpg" alt="Bob">
-                <h3>Bob Rite</h3>
-                <p>CEO and Founder</p>
-            </article>
+
+            <div class="team-container">
+
+                <article class="team-member">
+
+                    <img src="images/bob.jpg" alt="Bob Rite">
+
+                    <h3>Bob Rite</h3>
+
+                    <p>CEO and Founder</p>
+
+                </article>
 
 
-            <article>
-                <img src="images/john.jpg" alt="John">
-                <h3>John Doe</h3>
-                <p>Creative Director</p>
-            </article>
+
+                <article class="team-member">
+
+                    <img src="images/john.jpg" alt="John Doe">
+
+                    <h3>John Doe</h3>
+
+                    <p>Creative Director</p>
+
+                </article>
+
+
+            </div>
+
 
         </section>
 
 
+
+
+
         <!-- Contact Section -->
-        <section class="contact">
+        <section class="contact-section">
+
 
             <h2>Contact Us</h2>
 
-            <form>
-                <label>Name</label>
-                <input type="text">
 
-                <label>Email</label>
-                <input type="email">
+            <!-- Contact Form -->
+            <form class="contact-form">
 
-                <label>Message</label>
-                <textarea></textarea>
+                <label for="name">Name</label>
+                <input id="name" type="text">
 
-                <button>Send</button>
+
+                <label for="email">Email</label>
+                <input id="email" type="email">
+
+
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+
+
+                <button type="submit">
+                    Send
+                </button>
+
+
             </form>
 
 
+
+            <!-- Location -->
             <div class="location">
+
                 <h3>Location</h3>
-                <p>Google Map goes here</p>
+
+                <p>Google Map</p>
+
             </div>
 
 
+
+
+            <!-- Hours -->
             <div class="hours">
+
                 <h3>Hours of Operation</h3>
 
+
                 <table>
+
                     <tr>
                         <th>Day</th>
                         <th>Hours</th>
                     </tr>
+
 
                     <tr>
                         <td>Monday-Friday</td>
                         <td>9am-5pm</td>
                     </tr>
 
+
                     <tr>
                         <td>Saturday-Sunday</td>
                         <td>Closed</td>
                     </tr>
 
+
                 </table>
+
+
             </div>
 
+
         </section>
+
 
     </main>
 
 
-    <!-- Footer -->
-    <footer>
-        <p>Copyright ©️ Three Star Media</p>
+
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+
+        <p>
+            Copyright ©️ Three Star Media
+        </p>
+
     </footer>
 
 
