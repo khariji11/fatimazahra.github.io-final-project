@@ -1,3 +1,7 @@
+/* =========================
+   GENERAL
+========================= */
+
 * {
     box-sizing: border-box;
 }
@@ -8,10 +12,10 @@ html {
 
 body {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
-    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
     background: #fff;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 img {
@@ -21,7 +25,7 @@ img {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -39,15 +43,13 @@ p {
 ========================= */
 
 header {
-    background: #111;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background: #333;
+    color: #fff;
 }
 
 .header-container {
     min-height: 70px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,56 +59,71 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+
     color: white;
     text-decoration: none;
+
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
 }
 
 nav ul {
     display: flex;
+
     list-style: none;
+
     margin: 0;
     padding: 0;
-    gap: 30px;
+
+    gap: 10px;
 }
 
 nav a {
+    display: block;
+
     color: white;
     text-decoration: none;
-    font-weight: 600;
-    padding: 25px 0;
-    display: block;
+
+    padding: 14px 18px;
+
+    font-weight: bold;
 }
 
-nav a:hover {
-    color: #ffb400;
+nav a:hover,
+nav a.active {
+    background: #d99a00;
 }
 
 
 /* =========================
-   BUTTON
+   BUTTONS
 ========================= */
 
 .button {
     display: inline-block;
-    background: #e59a00;
+
+    background: #d99a00;
     color: white;
+
     text-decoration: none;
+
     border: none;
-    padding: 12px 20px;
-    font-weight: 700;
+
+    padding: 12px 22px;
+
+    font-weight: bold;
+
     cursor: pointer;
 }
 
 .button:hover {
-    background: #c98200;
+    background: #b77d00;
 }
 
 
@@ -115,33 +132,41 @@ nav a:hover {
 ========================= */
 
 .hero {
-    min-height: 430px;
+    min-height: 410px;
+
     display: flex;
     align-items: center;
 
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.62),
-            rgba(0, 0, 0, 0.62)
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
         ),
-        url("../images/hero.jpg") center / cover no-repeat;
+        url("../images/main-banner.jpg")
+        center / cover no-repeat;
 }
 
 .hero-content {
+    max-width: 700px;
+
     color: white;
+
     padding: 70px 0;
 }
 
 .hero h1 {
-    font-size: 3.3rem;
+    font-size: 3.2rem;
+
     line-height: 1.15;
-    max-width: 600px;
-    margin-bottom: 15px;
+
+    margin-bottom: 20px;
 }
 
 .hero p {
-    max-width: 470px;
-    font-size: 1.05rem;
+    max-width: 650px;
+
+    font-size: 1rem;
+
     margin-bottom: 25px;
 }
 
@@ -151,30 +176,38 @@ nav a:hover {
 ========================= */
 
 .about {
-    background: #ffe8ae;
-    padding: 50px 0;
+    background: #ffe6a3;
+
+    padding: 35px 0;
 }
 
 .about-content {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+
+    gap: 35px;
+
     align-items: center;
 }
 
-.about-content img {
+.about-image img {
     width: 100%;
-    height: 260px;
+    height: 230px;
+
     object-fit: cover;
 }
 
-.about-text h2,
-.services h2,
-.projects h2,
-.team h2,
-.contact > .container > h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.about-text h2 {
+    font-size: 2.2rem;
+
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 0.9rem;
+
+    margin-bottom: 15px;
 }
 
 
@@ -183,49 +216,111 @@ nav a:hover {
 ========================= */
 
 .services {
-    padding: 50px 0;
+    padding: 40px 0;
+
     background: white;
 }
 
 .services > .container > h2 {
+    font-size: 2.2rem;
+
     text-align: center;
+
+    margin-bottom: 30px;
 }
 
 .service-grid {
     display: grid;
+
     grid-template-columns: repeat(6, 1fr);
-    gap: 15px;
+
+    gap: 12px;
 }
 
 .service-card {
-    background: #ffe8ae;
-    overflow: hidden;
+    background: #ffe6a3;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .service-card img {
     width: 100%;
+
     height: 145px;
+
     object-fit: cover;
 }
 
 .service-content {
     padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
 }
 
 .service-card h3 {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
+
     margin-bottom: 10px;
 }
 
 .service-card p {
-    font-size: 0.9rem;
-    min-height: 125px;
+    font-size: 0.82rem;
+
+    margin-bottom: 20px;
+
+    flex: 1;
 }
 
 .service-card .button {
     width: 100%;
+
     text-align: center;
-    padding: 9px;
+
+    padding: 9px 5px;
+}
+
+
+/* =========================
+   VISION
+========================= */
+
+.vision {
+    min-height: 220px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("../images/vision.jpg")
+        center / cover no-repeat;
+}
+
+.vision-content {
+    color: white;
+
+    max-width: 900px;
+
+    padding: 45px 0;
+}
+
+.vision h2 {
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+}
+
+.vision p {
+    font-size: 0.9rem;
+
+    margin-bottom: 20px;
 }
 
 
@@ -235,23 +330,45 @@ nav a:hover {
 
 .projects {
     background: #222;
+
     color: white;
-    padding: 50px 0;
+
+    padding: 45px 0;
 }
 
 .project-content {
     display: grid;
+
     grid-template-columns: 1fr 1.4fr;
-    gap: 45px;
+
+    gap: 40px;
+
     align-items: center;
 }
 
+.project-text h2 {
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+}
+
 .project-text h3 {
-    color: #e59a00;
+    color: #e3a000;
+
+    font-size: 1.25rem;
+
+    margin-bottom: 15px;
+}
+
+.project-text p {
+    font-size: 0.9rem;
+
+    margin-bottom: 20px;
 }
 
 .project-image img {
     width: 100%;
+
     border: 3px solid white;
 }
 
@@ -261,34 +378,48 @@ nav a:hover {
 ========================= */
 
 .team {
-    padding: 45px 0;
+    padding: 40px 0;
+
     background: white;
 }
 
 .team > .container > h2 {
     text-align: center;
+
+    font-size: 2.2rem;
+
+    margin-bottom: 25px;
 }
 
 .team-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
-    border: 1px solid #bbb;
+
+    border: 1px solid #aaa;
 }
 
 .team-member {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     min-height: 220px;
+
+    background: #ffe6a3;
 }
 
-.team-member:nth-child(1) {
-    border-right: 1px solid #bbb;
+.team-member:first-child {
+    border-right: 1px solid #aaa;
 }
 
 .team-member img {
     width: 100%;
+
     height: 100%;
+
     min-height: 220px;
+
     object-fit: cover;
 }
 
@@ -297,17 +428,21 @@ nav a:hover {
 }
 
 .team-info h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+
     margin-bottom: 2px;
 }
 
 .team-info h4 {
-    color: #d99300;
-    margin-bottom: 10px;
+    color: #d59500;
+
+    font-size: 0.95rem;
+
+    margin-bottom: 12px;
 }
 
 .team-info p {
-    font-size: 0.9rem;
+    font-size: 0.82rem;
 }
 
 
@@ -316,52 +451,75 @@ nav a:hover {
 ========================= */
 
 .contact {
-    padding: 20px 0 50px;
+    padding: 20px 0 45px;
+
+    background: white;
+}
+
+.contact > .container > h2 {
+    font-size: 2.1rem;
+
+    margin-bottom: 20px;
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 40px;
+
+    grid-template-columns: 1fr 1.2fr;
+
+    gap: 35px;
 }
 
 .contact-form h3,
 .location h3,
 .hours h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+
+    margin-bottom: 10px;
 }
 
 .contact-form form {
     display: flex;
+
     flex-direction: column;
 }
 
 .contact-form label {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+
     margin-bottom: 3px;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
+
+    padding: 8px;
+
     border: 1px solid #aaa;
+
     margin-bottom: 10px;
+
     font-family: inherit;
 }
 
 .contact-form textarea {
-    height: 120px;
+    height: 100px;
+
     resize: vertical;
 }
 
 .contact-form .button {
     width: 100%;
+
+    padding: 9px;
 }
 
 .location iframe {
     width: 100%;
-    height: 300px;
+
+    height: 260px;
+
     border: 0;
 }
 
@@ -372,23 +530,38 @@ nav a:hover {
 
 .hours {
     margin-top: 25px;
+
+    max-width: 600px;
+}
+
+.hours h3 {
+    margin-bottom: 10px;
 }
 
 .hours table {
     width: 100%;
+
     border-collapse: collapse;
 }
 
 .hours th {
-    background: #ffe8ae;
-    padding: 10px;
-    border: 1px solid #bbb;
+    background: #ffe6a3;
+
+    padding: 8px;
+
+    border: 1px solid #aaa;
+
+    text-align: center;
 }
 
 .hours td {
-    padding: 10px;
-    border: 1px solid #bbb;
+    padding: 8px;
+
+    border: 1px solid #aaa;
+
     text-align: center;
+
+    font-size: 0.85rem;
 }
 
 
@@ -397,24 +570,33 @@ nav a:hover {
 ========================= */
 
 footer {
-    background: #222;
+    background: #333;
+
     color: white;
-    padding: 25px 0;
+
+    padding: 20px 0;
 }
 
 .footer-content {
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 }
 
 .footer-content p {
     margin: 0;
+
+    font-size: 0.8rem;
 }
 
 .footer-content a {
-    color: #e59a00;
+    color: #d99a00;
+
     text-decoration: none;
+
+    font-size: 0.85rem;
 }
 
 
@@ -426,17 +608,24 @@ footer {
 
     .header-container {
         flex-direction: column;
-        padding: 15px 0;
+
+        padding: 12px 0;
     }
 
     nav ul {
-        gap: 15px;
         flex-wrap: wrap;
+
         justify-content: center;
+
+        gap: 5px;
     }
 
     nav a {
-        padding: 5px;
+        padding: 8px 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
     }
 
     .service-grid {
@@ -453,10 +642,12 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .team-member:nth-child(1) {
+    .team-member:first-child {
         border-right: none;
-        border-bottom: 1px solid #bbb;
+
+        border-bottom: 1px solid #aaa;
     }
+
 }
 
 
@@ -466,11 +657,58 @@ footer {
 
 @media (max-width: 600px) {
 
+    .container {
+        width: 92%;
+    }
+
+    .logo-link {
+        font-size: 1.1rem;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    nav ul {
+        gap: 2px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+
+        padding: 6px 7px;
+    }
+
+    .hero {
+        min-height: 430px;
+    }
+
     .hero h1 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 220px;
     }
 
     .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card img {
+        height: 200px;
+    }
+
+    .project-content {
         grid-template-columns: 1fr;
     }
 
@@ -480,15 +718,20 @@ footer {
 
     .team-member img {
         height: 250px;
+
+        min-height: 250px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
 
     .footer-content {
         flex-direction: column;
+
         gap: 10px;
+
         text-align: center;
     }
 
-    nav ul {
-        gap: 8px;
-    }
 }
